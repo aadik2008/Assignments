@@ -21,4 +21,6 @@ public class GuessTheNumber {
 			System.out.println("And your number is lower than the actual number");
 		System.out.println("The actual number was "+a);
 	}
+	
+	
 }
