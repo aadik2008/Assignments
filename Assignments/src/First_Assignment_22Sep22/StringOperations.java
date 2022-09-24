@@ -44,11 +44,11 @@ public class StringOperations {
 		System.out.println("Sorted String : " + sortedString);
 
 		// Remove Duplicates from the string
-
+		String str=sortedString;
 		StringBuilder sb = new StringBuilder();
 		Set<Character> linkedHashSet = new LinkedHashSet<>();
-		for (int i = 0; i < s.length(); i++) {
-			linkedHashSet.add(s.charAt(i));
+		for (int i = 0; i < str.length(); i++) {
+			linkedHashSet.add(str.charAt(i));
 		}
 
 		for (Character c : linkedHashSet) {
@@ -73,7 +73,7 @@ public class StringOperations {
 
 			if ('a' <= sb.charAt(i) && sb.charAt(i) <= 'z')
 				index = sb.charAt(i) - 'a';
-			mark[index] = true;
+			mark[index] = true; 
 		}
 		for (int i = 0; i <= 25; i++) {
 			if (!mark[i]) {
@@ -81,6 +81,6 @@ public class StringOperations {
 				return;
 			}
 		}
-		System.out.println("Pangram String😄👍");
+		System.out.println("The given string is Pangram String😄👍");
 	}
 }
