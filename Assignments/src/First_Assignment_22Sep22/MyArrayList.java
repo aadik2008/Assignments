@@ -14,13 +14,13 @@ import java.util.Arrays;
 import java.util.Scanner;
 //import java.util.Scanner;
 
-
 class MyCustomArrayList<Array> {
 
 	private static final int InitialCapacity = 10;
-	
+
 	private Object elementData[] = {};
 	private int size = 0;
+
 	public MyCustomArrayList() {
 		elementData = new Object[InitialCapacity];
 	}
@@ -41,7 +41,7 @@ class MyCustomArrayList<Array> {
 	}
 
 	public Object remove(int index) {
-		
+
 		if (index < 0 || index >= size) {
 			throw new IndexOutOfBoundsException("Index: " + index + ", Size " + index);
 		}
@@ -71,10 +71,10 @@ class MyCustomArrayList<Array> {
 
 public class MyArrayList {
 
-	public static void main(String[] args) {	
-	
+	public static void main(String[] args) {
+
 		MyCustomArrayList<Integer> list = new MyCustomArrayList<Integer>();
-		
+
 		list.add(36);
 		list.add(35);
 		list.add(96);
@@ -83,25 +83,21 @@ public class MyArrayList {
 		list.add(91);
 		list.add(48);
 		list.add(85);
-		
+
 		list.display();
 		System.out.println();
-		Scanner sc=new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Please enter which index you want to get");
-		int x=sc.nextInt();
-        System.out.println("The element at given index is: "+list.get(x));
-        System.out.println("Please enter which index you want to remove");
-        int y=sc.nextInt();
-        System.out.println("The element at given index is: "+list.remove(y));
-		
-		
+		int x = sc.nextInt();
+		System.out.println("The element at given index is: " + list.get(x));
+		System.out.println("Please enter which index you want to remove");
+		int y = sc.nextInt();
+		System.out.println("The element at given index is: " + list.remove(y));
 
-		
-		System.out.println("\nlet's display custom ArrayList again after removal at index "+y);
+		System.out.println("\nlet's display custom ArrayList again after removal at index " + y);
 
 		list.display();
 
-		
 	}
 
 }
