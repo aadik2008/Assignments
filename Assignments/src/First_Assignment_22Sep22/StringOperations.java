@@ -26,13 +26,13 @@ public class StringOperations {
 		System.out.println(s);
 
 		// Sorting the string with Optimised Approach(Time Complexity O(nlogn))
-		char[] d = s.toCharArray();         
+		/*		char[] d = s.toCharArray();         
 		java.util.Arrays.sort(d);          
 		String sortedString = new String(d);  
 		System.out.println(sortedString); 	
-				
+		*/		
         // Without using predefined method i.e:Through Bubble Sort(Time Complexity O(n^2))
-/*		String sortedString = "";
+		String sortedString = "";
 		char tempString[] = s.toCharArray();
 		int n = tempString.length;
 		for (int i = 0; i < n; i++) {
@@ -47,7 +47,7 @@ public class StringOperations {
 		sortedString = new String(tempString);
 		System.out.println("Original String : " + s);
 		System.out.println("Sorted String : " + sortedString);
-*/
+
 //////////////////////////////////////////////////////////////////////////////		
 		// Remove Duplicates from the string
 		String str=sortedString;
